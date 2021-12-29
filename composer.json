@@ -1,0 +1,53 @@
+{
+    "name": "darkink/laravel-openid-server",
+    "description": "Darkink OpenId Server provides a way to add missing feature to passport",
+    "keywords": ["laravel", "jwt", "opendid"],
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/angelinsky7/laravel-openid-server/issues",
+        "source": "https://github.com/angelinsky7/laravel-openid-server"
+    },
+    "authors": [
+        {
+            "name": "Angelinsky7",
+            "email": "steven.demarco@while-not-false.ch"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/http": "^8.77",
+        "illuminate/support": "^8.77",
+        "laravel/passport": "^10.2"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10"
+    },
+    "autoload": {
+        "psr-4": {
+            "Darkink\\OpenIdServer\\": "src/",
+            "Darkink\\OpenIdServer\\Database\\Factories\\": "database/factories/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Darkink\\OpenIdServer\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "laravel": {
+            "providers": [
+                "Darkink\\OpenIdServer\\Providers\\Dummy"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
