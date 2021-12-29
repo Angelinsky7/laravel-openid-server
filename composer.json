@@ -38,11 +38,6 @@
     "extra": {
         "branch-alias": {
             "dev-master": "1.x-dev"
-        },
-        "laravel": {
-            "providers": [
-                "Darkink\\OpenIdServer\\Providers\\Dummy"
-            ]
         }
     },
     "config": {
